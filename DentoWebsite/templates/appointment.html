@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+
+{% load static %}
+
+{% block title %}Set An Appointment to see Dr. Faten  {% endblock %}
+{% block content %}
+
+
+
+<div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image:url('/static/img/img7.webp');">
+<div class="container h-100">
+<div class="row h-100 align-items-center">
+<div class="col-12">
+<h2 class="title">Your Appointment </h2>
+</div>
+</div>
+</div>
+</div>
+<div class="breadcumb--con">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<nav aria-label="breadcrumb">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i> Home</a></li>
+<li class="breadcrumb-item active" aria-current="page">Set An Appointment </li>
+</ol>
+</nav>
+</div>
+</div>
+</div>
+</div>
+<center>
+    <h1 class="title">Review Your  Information : </h3>
+        <br>
+
+    <strong>Your Name : </strong>{{ your_name }}<br/>
+    <br/>
+    <strong>Your Phone : </strong>{{ your_phone }}<br/>
+    <br/>
+    <strong>Your Email : </strong>{{ your_email }}<br/>
+    <br/>
+    <strong>Your Adress : </strong> {{ your_address }}<br/>
+    <br/>
+    <strong>Your Appointment Time  : </strong>{{ your_schedule }}<br/>
+    <br/>
+    <strong>Your Appointment Date  : </strong>{{ your_date }}<br/>
+    <br/>
+    <strong>Your Message  : </strong>{{ your_message }}<br/>
+
+    <br><br><br><br>
+
+
+</center>
+
+
+
+
+
+{% endblock  %}

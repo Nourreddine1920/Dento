@@ -1,0 +1,381 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Mirrored from preview.colorlib.com/theme/dento/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 12 Feb 2022 15:28:52 GMT -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Dento - Dentist &amp; Medical HTML Template"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>{% block title %} {% endblock %}</title>
+
+    <link rel="icon" href="{% static 'img/dental-clinic.png' %}" />
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <script>
+      (function (w, d) {
+        !(function (a, e, t, r, z) {
+          (a.zarazData = a.zarazData || {}),
+            (a.zarazData.executed = []),
+            (a.zarazData.tracks = []),
+            (a.zaraz = { deferred: [] });
+          var s = e.getElementsByTagName("title")[0];
+          s && (a.zarazData.t = e.getElementsByTagName("title")[0].text),
+            (a.zarazData.w = a.screen.width),
+            (a.zarazData.h = a.screen.height),
+            (a.zarazData.j = a.innerHeight),
+            (a.zarazData.e = a.innerWidth),
+            (a.zarazData.l = a.location.href),
+            (a.zarazData.r = e.referrer),
+            (a.zarazData.k = a.screen.colorDepth),
+            (a.zarazData.n = e.characterSet),
+            (a.zarazData.o = new Date().getTimezoneOffset()),
+            (a.dataLayer = a.dataLayer || []),
+            (a.zaraz.track = (e, t) => {
+              for (key in (a.zarazData.tracks.push(e), t))
+                a.zarazData["z_" + key] = t[key];
+            }),
+            (a.zaraz._preSet = []),
+            (a.zaraz.set = (e, t, r) => {
+              (a.zarazData["z_" + e] = t), a.zaraz._preSet.push([e, t, r]);
+            }),
+            a.dataLayer.push({ "zaraz.start": new Date().getTime() }),
+            a.addEventListener("DOMContentLoaded", () => {
+              var t = e.getElementsByTagName(r)[0],
+                z = e.createElement(r);
+              (z.defer = !0),
+                (z.src =
+                  "https://preview.colorlib.com/cdn-cgi/zaraz/s.js?z=" +
+                  btoa(encodeURIComponent(JSON.stringify(a.zarazData)))),
+                t.parentNode.insertBefore(z, t);
+            });
+        })(w, d, 0, "script");
+      })(window, document);
+    </script>
+  </head>
+  <body>
+    <div id="preloader">
+      <div class="preload-content">
+        <div id="dento-load"></div>
+      </div>
+    </div>
+
+    <header class="header-area">
+      <div class="top-header-area">
+        <div class="container h-100">
+          <div class="row h-100 align-items-center">
+            <div class="col-6 col-md-9 col-lg-8">
+              <div class="top-header-content">
+                <a
+                  href="#"
+                  data-toggle="tooltip"
+                  data-placement="bottom"
+                  title="28 Jackson Street, Chicago, 7788569 USA"
+                  ><i class="fa fa-map-marker"></i>
+                  <span>28 Jackson Street, Chicago, 7788569 USA</span></a
+                >
+                <a
+                  href="#"
+                  data-toggle="tooltip"
+                  data-placement="bottom"
+                  title="info.dento@gmail.com"
+                  ><i class="fa fa-envelope"></i>
+                  <span
+                    ><span
+                      class="__cf_email__"
+                      data-cfemail="731a1d151c5d17161d071c33141e121a1f5d101c1e"
+                      >[email&#160;protected]</span
+                    ></span
+                  ></a
+                >
+              </div>
+            </div>
+
+            <div class="col-6 col-md-3 col-lg-4">
+              <div class="top-header-social-info text-right">
+                <a
+                  href="#"
+                  data-toggle="tooltip"
+                  data-placement="bottom"
+                  title="Facebook"
+                  ><i class="fa fa-facebook"></i
+                ></a>
+                <a
+                  href="#"
+                  data-toggle="tooltip"
+                  data-placement="bottom"
+                  title="Twitter"
+                  ><i class="fa fa-twitter"></i
+                ></a>
+                <a
+                  href="#"
+                  data-toggle="tooltip"
+                  data-placement="bottom"
+                  title="Google Plus"
+                  ><i class="fa fa-google-plus"></i
+                ></a>
+                <a
+                  href="#"
+                  data-toggle="tooltip"
+                  data-placement="bottom"
+                  title="Linkedin"
+                  ><i class="fa fa-linkedin"></i
+                ></a>
+                <a
+                  href="#"
+                  data-toggle="tooltip"
+                  data-placement="bottom"
+                  title="Pinterest"
+                  ><i class="fa fa-pinterest"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-header-area">
+        <div class="classy-nav-container breakpoint-off">
+          <div class="container">
+            <nav class="classy-navbar justify-content-between" id="dentoNav">
+              <a class="nav-brand" href="index-2.html"
+                ><img src="{% static 'img/dento.webp' %}" alt=""
+              /></a>
+
+              <div class="classy-navbar-toggler">
+                <span class="navbarToggler"
+                  ><span></span><span></span><span></span
+                ></span>
+              </div>
+
+              <div class="classy-menu">
+                <div class="classycloseIcon">
+                  <div class="cross-wrap">
+                    <span class="top"></span><span class="bottom"></span>
+                  </div>
+                </div>
+
+                <div class="classynav">
+                  <ul id="nav">
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li>
+                      <a href="#">Pages</a>
+                      <ul class="dropdown">
+                        <li><a href="{% url 'home' %}">- Home</a></li>
+                        <li><a href="{% url 'about' %}">- About Us</a></li>
+                        <li><a href="{% url 'service' %}">- Service</a></li>
+                        <li><a href="{% url 'pricing' %}">- Pricing</a></li>
+                        <li><a href="{% url 'blog' %}">- Blog</a></li>
+                        <li><a href="{% url 'contact' %}">- Contact</a></li>
+                        
+                      </ul>
+                    </li>
+                    <li><a href="{% url 'about' %}">About</a></li>
+                    <li><a href="{% url 'service' %}">Service</a></li>
+                    <li><a href="{% url 'pricing' %}">Pricing</a></li>
+                    <li>
+                      <a href="{% url 'blog' %}">Blog</a>
+                      
+                    </li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <a href="{% url 'appointment' %}" class="btn dento-btn booking-btn">Booking Now</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    {% block content %} {% endblock %}
+
+    <footer
+      class="footer-area bg-img bg-gradient-overlay"
+      style="background-image: url('/static/img/img4.webp')"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="single-footer-widget">
+              <a href="index-2.html" class="d-block mb-4"
+                ><img src="{% static 'img/dento.webp' %}" alt=""
+              /></a>
+              <p>
+                Etiam sutor risus, dapibus act elefend katen, lacinia sitamet
+                denim. Mauris sagittis kansa interdum dignissim.
+              </p>
+              <div class="footer-contact">
+                <p>
+                  <i class="icon_pin"></i> 28 Jackson Street, Chicago, 7788569
+                  USA
+                </p>
+                <p><i class="icon_phone"></i> +84. 2252. 2250. 122</p>
+                <p>
+                  <i class="icon_mail"></i>
+                  <a
+                    href="https://preview.colorlib.com/cdn-cgi/l/email-protection"
+                    class="__cf_email__"
+                    data-cfemail="a9c0c7cfc687cdccc7ddc6e9cec4c8c0c587cac6c4"
+                    >[email&#160;protected]</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg">
+            <div class="single-footer-widget">
+              <h5 class="widget-title">Opening Hours</h5>
+
+              <ul class="opening-hours">
+                <li><span>Mon-Wed</span> <span>8.00-18.00</span></li>
+                <li><span>Thu-Fri</span> <span>8.00-17.00</span></li>
+                <li><span>Sat</span> <span>9.00-17.00</span></li>
+                <li><span>Sun</span> <span>10.00-17.00</span></li>
+                <li><span>Holiday</span> <span>Closed</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg">
+            <div class="single-footer-widget">
+              <h5 class="widget-title">Quick Link</h5>
+
+              <nav>
+                <ul class="quick-links">
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">FAQs</a></li>
+                  <li><a href="{ url 'contact' }">Contact</a></li>
+                  <li><a href="#">Policy</a></li>
+                  <li><a href="#">News</a></li>
+                  <li><a href="#">Advisors</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Dentist</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Legals</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg">
+            <div class="single-footer-widget">
+              <h5 class="widget-title">Newsletter</h5>
+              <p>
+                We will send out weekly newest article and some great offers
+              </p>
+
+              
+              <div class="footer-social-info">
+                <a
+                  href="#"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Facebook"
+                  ><i class="fa fa-facebook"></i
+                ></a>
+                <a
+                  href="#"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Twitter"
+                  ><i class="fa fa-twitter"></i
+                ></a>
+                <a
+                  href="#"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Google Plus"
+                  ><i class="fa fa-google-plus"></i
+                ></a>
+                <a
+                  href="#"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Linkedin"
+                  ><i class="fa fa-linkedin"></i
+                ></a>
+                <a
+                  href="#"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Pinterest"
+                  ><i class="fa fa-pinterest"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="copywrite-content">
+              <p>
+                Copyright 
+                <script
+                  data-cfasync="false"
+                  src="https://preview.colorlib.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+                ></script>
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                All rights reserved | Awled Brahim Nourreddine 
+                <i class="fa fa-heart-o" aria-hidden="true"></i> by
+                <a href="https://www.linkedin.com/in/nourreddine-awled-brahim-663495202/" target="_blank">Nourreddine</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script>
+      eval(mod_pagespeed_0LElGVG0yi);
+    </script>
+
+    <script>
+      eval(mod_pagespeed_SzvHxMmGVr);
+    </script>
+
+    <script src="{% static 'js/dento.bundle.js' %}"></script>
+
+    <script src="{% static 'js/default-assets/active.js' %}"></script>
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-23581568-13");
+    </script>
+    <script
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194"
+      integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw=="
+      data-cf-beacon='{"rayId":"6dc6d95c5f3283a2","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.12.0","si":100}'
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
